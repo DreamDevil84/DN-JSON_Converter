@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JSON_Converter</title>
+</head>
+
+<body>
+    <div>
+        <div id="textInfo">Text indicator</div>
+        <button id="loadButton" onclick="getData('water.json')">Load</button>
+    </div>
+    <div id="controlPanel">
+        <div>
+            <div>Make Outline</div>
+            <input type="number" name="sensitivity" id="sensitivityInput" value="4">
+            <button id="btnShow" onclick="pressShow()">Show</button>
+
+        </div>
+        <div>
+            <div>Make Contrast</div>
+            <input type="number" name="contrast" id="sensitivityInputContrast" value="4">
+            <button id="btnShow" onclick="pressContrast()">Show</button>
+        </div>
+        <div>
+            <button onclick="pressAnimate()">Animate</button>
+        </div>
+        <br>
+        <canvas id="myCanvas"></canvas>
+        <div>
+            <div>Save as Coords</div>
+            Name:
+            <input id="filename" type="text" value="coords">
+            <button onclick="pressSave()">Save</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
